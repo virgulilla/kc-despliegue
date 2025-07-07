@@ -49,14 +49,7 @@ Se ha levantado una instancia EC2 en AWS, configurando:
 
 ---
 
-### ✅ 3. Aplicaciones independientes
-
-- La aplicación en React es una SPA que no interactúa con la app de Node.
-- La aplicación en Node.js renderiza vistas directamente con EJS y gestiona su lógica de forma autónoma.
-
----
-
-### ✅ 4. Nginx como proxy inverso y servidor estático
+### ✅ 3. Nginx como proxy inverso y servidor estático
 
 - Nginx se configuró como proxy inverso para la aplicación Node.js (evitando exponer el puerto 3000).
 - También sirve los archivos estáticos (CSS, JS, imágenes) de la app de Node directamente, mejorando el rendimiento.
@@ -64,14 +57,14 @@ Se ha levantado una instancia EC2 en AWS, configurando:
 
 ---
 
-### ✅ 5. HTTPS con Certbot
+### ✅ 4. HTTPS con Certbot
 
 - Se generaron certificados SSL con Let's Encrypt para ambos dominios.
 - Nginx ha sido configurado automáticamente por Certbot para servir las apps de forma segura (HTTPS) y renovar los certificados automáticamente.
 
 ---
 
-### ✅ 6. Gestión del backend con Supervisor
+### ✅ 5. Gestión del backend con Supervisor
 
 - Se configuró Supervisor para mantener el backend Node.js en ejecución.
 - Permite reinicios automáticos ante fallos o reinicios del servidor.
