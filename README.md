@@ -74,7 +74,6 @@ Se ha levantado una instancia EC2 en AWS, configurando:
 ## Lecciones aprendidas
 
 - Configuración segura de un servidor Ubuntu en AWS
-- Despliegue separado de frontend y backend independientes
 - Uso de Nginx como proxy inverso y servidor de archivos estáticos
 - Gestión de procesos en segundo plano con Supervisor
 - Configuración de HTTPS con Certbot y Let's Encrypt
